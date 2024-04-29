@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="car.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+    <div>
+      <div> <div><a class="home" href="index.html"><img src="th.jpeg" alt=""></a></div></div>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <br><br>
+       
+        
+        <ul>
+          
+            <form action="">
+              <label for="carpic"><a href="https://id.images.search.yahoo.com/search/images;_ylt=Awr1UUaiviBmeiMLuzjLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=bunga+mawar&fr2=piv-web&type=E210ID0G0&fr=mcafee" target="blank"><img src="mawar.jpg" alt=""></a></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+              <label for="carpic"><a href="https://www.google.co.id/search?sca_esv=e94c6552adb81b09&sca_upv=1&sxsrf=ACQVn0-chBylmCH2OXHjpVl2NxRu4P9EmA:1713422210168&q=melati&uds=AMwkrPuUxXcgJT2IQ28GfuzKCHfLMXhoIztgIZ0jJi_rI-1dA7WzKITds5xgCHOJm1TqqglfaZHZW1IQLVTTYEF_47n6SlaqPpw__gPQkI6pKrzdSRFAV9jKQ5ctoUY48MsczRH5RAw-zwM0nY1paAuVH4febEa0KrtPCy6qB256HqER3x5GLZUIH-lkSdY1sj82AZMYQn0ZOLAMQyqRfCmlPfm5YCpoCmZn74lWp_oJDrlFgCSzge5guzy-tPnZUtWt74PHsOWxwrw665t2p5paq6hx4DnBFDdZxZxX6qJyLSseQ71mjkY&udm=2&prmd=isvnmbtz&sa=X&ved=2ahUKEwiJrL-Rk8uFAxWeyDgGHbuhB4YQtKgLegQIDRAB&biw=1280&bih=585&dpr=1.5" target="blank"><img src="melati2.jpg" alt=""></a></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+              <label for="carpic"><a href="https://www.google.co.id/search?q=bunga+tulip&sca_esv=e94c6552adb81b09&sca_upv=1&udm=2&biw=1280&bih=585&sxsrf=ACQVn0-hLOBJP3RJMgsaliFgSgpNpfJrZQ%3A1713422212355&ei=hL8gZpH0FOOJ4-EPvciTqAM&oq=bunga+tu&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGJ1bmdhIHR1KgIIADIIEAAYgAQYsQMyBBAAGAMyCBAAGIAEGLEDMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjpH1AAWPcRcAB4AJABAZgBsQKgAcgHqgEHNS4yLjAuMbgBAcgBAPgBAZgCB6ACtwXCAgQQIxgnwgIKEAAYgAQYQxiKBcICDRAAGIAEGLEDGEMYigWYAwCSBwM1LjKgB70s&sclient=gws-wiz-serp" target="blank"><img src="tulip1.jpg" alt=""></a></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+              <label for="carpic"><a href="https://www.google.co.id/search?q=bunga+sepatu&sca_esv=e94c6552adb81b09&sca_upv=1&udm=2&biw=1280&bih=585&sxsrf=ACQVn09gfJAwtTgAlbNXFolZVtLdig4dTA%3A1713422277297&ei=xb8gZtiHEafo4-EPp6OHuA8&oq=bungs+sep&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWJ1bmdzIHNlcCoCCAAyCRAAGIAEGBgYCkimJVCIBFjnG3ADeACQAQCYAaYBoAGsCaoBAzQuN7gBAcgBAPgBAZgCDqAC_gmoAgrCAgcQIxgnGOoCwgIEECMYJ8ICChAAGIAEGEMYigXCAg0QABiABBixAxhDGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICCBAAGIAEGLEDwgIFEAAYgATCAgQQABgewgIGEAAYCBgewgIGEAAYBRgemAMNkgcDNy43oAfTOA&sclient=gws-wiz-serp" target="blank"><img src="sepatu.jpg" alt=""></a></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+            </form>
+          
+        </ul>
+        <div class="latihan">
+            <a href="https://forms.gle/a7ti4v69p22Sr2PX9"><h1>Latihan</h1></a>
+        </div>
+
+        
+    </div>
+ 
+<script>
+const xValues = ["Bunga mawar", "bunga melati", "Bunga tulip", "Bunga sepatu",];
+const yValues = [60, 45, 40, 55, 15];
+const barColors = ["green", "yellow","purple","pink",];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Banyaknya Bunga di Pasar Bunga Karangrau"
+    }
+  }
+});
+</script>
+
+</body>
+</html>

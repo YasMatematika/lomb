@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="car.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+    <div>
+      <div> <div><a class="home" href="index.html"><img src="th.jpeg" alt=""></a></div></div>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        
+        <br>
+        <ul>
+          
+            <form action="">
+              <label for="carpic"><img src="black.jpg" alt=""></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+              <label for="carpic"><img src="bluecar.jpg" alt=""></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+              <label for="carpic"><img src="redcar.jpg" alt=""></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+              <label for="carpic"><img src="yellowcar.webp" alt=""></label>
+              <!-- <input type="number" placeholder="isi dengan angka" required id="carpic"> -->
+            </form>
+          
+        </ul>
+        <div class="latihan">
+            <a href="https://forms.gle/a7ti4v69p22Sr2PX9"><h1>Latihan</h1></a>
+        </div>
+
+        
+    </div>
+ 
+<script>
+const xValues = ["Mobil warna hitam", "mobil warna biru", "mobil warna merah", "mobil warna kuning",];
+const yValues = [20, 55, 45, 30, 15];
+const barColors = ["black", "blue","red","orange",];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Jumlah mobil di Karangrau berdasarkan warnanya"
+    }
+  }
+});
+</script>
+
+</body>
+</html>

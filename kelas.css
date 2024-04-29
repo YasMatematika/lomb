@@ -1,0 +1,73 @@
+*, html{
+    padding: 0;
+    margin: 0;
+}
+
+.navTitle {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: green;
+    
+}
+
+.home > img {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+    
+}
+
+
+.car {
+    width: 300px;
+    height: 160px;
+    border-radius: 40%;
+    padding: 40px 20px;
+}
+.bunga{
+    width: 300px;
+    height: 160px;
+    border-radius: 40%;
+    padding: 40px 20px;
+    
+}
+.container {
+    background-color: beige;
+    height: 60vh;
+}
+
+.choise{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    list-style: none;
+
+
+}
+
+.radio-choise > li {
+    list-style: none;
+    padding: 50px;
+}
+
+.footer{
+    background-color: black;
+    height: 50px;
+    align-items: center;
+   
+    
+}
+
+.footer > h6 {
+    padding-top: 20px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+   
+}
